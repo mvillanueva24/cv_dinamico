@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4; 
+  }
+  .formulario {
+    max-width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .formulario h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .formulario > form {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario .field {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    color: #555;
+  }
+
+  .formulario .sfield {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .formulario .text-input, select, textarea {
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .flex-field {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .flex-field div {
+    width: 100%;
+  }
+  
+  .formulario .text-input:focus, select:focus, textarea:focus {
+    border-color: #000000;
+  }
+  
+  textarea {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #403ca6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .cv {
+    max-width: 55%;
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  form {
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  li {
+    margin: 10px 0px;
+  }
+  
+  header {
+    display: flex;
+    background-color: #585858;
+    padding: 30px 0px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 180px;
+    border-radius: 50%;
+  }
+  
+  .nombre {
+    width: 70%;
+    text-align: center;
+    color: white;
+  }
+  
+  .nombre h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .nombre span {
+    font-size: 30px;
+    font-weight: 100;
+    color: #ACACAC;
+  }
+  
+  section {
+    display: flex;
+}
+  
+  hr {
+    display: block;
+    border: 0;
+    border-top: 2px solid #000;
+    margin: 0 0;
+    padding: 0;
+    width: 200px;
+  }
+  
+  .contacto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0px;
+  }
+  
+  article hr {
+    display: block;
+    border: 0;
+    border-top: 2px solid #000;
+    margin: 0 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav {
+    flex: 1;
+    background: #d4d4d4;
+    padding: 30px 40px;
+    border-radius: 0 0 8px 8px; 
+  }
+  
+  nav ul {
+    padding: 0px 20px;
+  }
+  
+  .idiomas-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  h3 {
+    margin: 3px 0px;
+    font-size: 25px; /* Color verde para encabezados */
+  }
+  
+  h4 {
+    margin: 20px 0 8px 0;
+    font-size: 22px;
+  }
+  
+  .article-lugar {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .cv article p {
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%; /* Limita el ancho máximo al del contenedor */
+    box-sizing: border-box; /* Asegura que el ancho se mida correctamente */
+    padding: 10px; /* Opcional: puedes ajustar el espacio interno */
+  }
+  
+  .article-rango-fechas {
+    font-weight: normal;
+    color: #8b8b8b;
+  }
+  
+  .experiencia-list {
+    padding: 0;
+    padding: 0px 20px;
+  }
+  
+  article {
+    flex: 3;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    overflow: hidden; /* Asegura que no haya desbordamiento visible */
+    padding: 30px 40px;
+    border-radius: 0 0 8px 8px;
+    max-width: 100%; /* Añade un ancho máximo para evitar el desbordamiento */
+    word-wrap: break-word; /* Evita que las palabras largas se desborden */
+    overflow-wrap: break-word; /* Ajusta el contenido largo o palabras largas */
+    white-space: normal; /* Asegura que el texto se ajuste en varias líneas */
+}
+  
+  @media (max-width: 800px) {
+    section {
+      flex-direction: column;
+    }
+    
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    body {
+      flex-direction: column;
+    }
+  
+    .cv, .formulario {
+      max-width: 100%;
+      margin: 10px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    article {
+      min-width: 600px;
+    }
+  }
